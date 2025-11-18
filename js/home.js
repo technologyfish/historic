@@ -96,7 +96,7 @@ function renderBuildings() {
     if (!grid) return;
 
     grid.innerHTML = buildingsData.map(building => `
-        <div class="building-card" data-building-id="${building.id}" onclick="window.location.href='story.html?id=${building.id}'" style="cursor: pointer;">
+        <div class="building-card" data-building-id="${building.id}" onclick="window.location.href='./story.html?id=${building.id}'" style="cursor: pointer;">
             <div class="building-image-wrapper">
                 <img src="${building.image}" alt="${building.title}" class="building-image">
                <!-- <div class="building-mark" style="background-color: ${building.markColor};">
@@ -121,7 +121,7 @@ function renderBuildings() {
                     </div>
                 </div>
                 <p class="building-description">${building.description}</p>
-                <button class="discover-button" onclick="event.stopPropagation(); window.location.href='story.html?id=${building.id}'">
+                <button class="discover-button" onclick="event.stopPropagation(); window.location.href='./story.html?id=${building.id}'">
                     Discover the Story
                 </button>
             </div>
@@ -138,7 +138,7 @@ $(document).ready(function() {
         const locationId = $(this).data('location-id');
         if (locationId) {
             // 跳转到story页面，传递位置ID
-            window.location.href = `story.html?id=${locationId}`;
+            window.location.href = `./story.html?id=${locationId}`;
         }
     });
 });

@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     if (!storyId || !storiesData[storyId]) {
         // 如果没有有效的story ID，重定向到首页
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
         return;
     }
 
@@ -220,7 +220,7 @@ function renderNavigation(currentStoryId) {
     // Previous按钮
     if (currentIndex > 0) {
         const prevId = storyIds[currentIndex - 1];
-        navHtml += `<a href="story.html?id=${prevId}" class="nav-button nav-button-prev">← Previous Story</a>`;
+        navHtml += `<a href="./story.html?id=${prevId}" class="nav-button nav-button-prev">← Previous Story</a>`;
     } else {
         navHtml += '<span class="nav-button nav-button-prev nav-button-disabled"></span>';
     }
@@ -231,17 +231,17 @@ function renderNavigation(currentStoryId) {
     // Next按钮
     if (currentIndex < storyIds.length - 1) {
         const nextId = storyIds[currentIndex + 1];
-        navHtml += `<a href="story.html?id=${nextId}" class="nav-button nav-button-next">Next Story →</a>`;
+        navHtml += `<a href="./story.html?id=${nextId}" class="nav-button nav-button-next">Next Story →</a>`;
     } else {
         navHtml += '<span class="nav-button nav-button-next nav-button-disabled"></span>';
     }
     
 
     
-    // 如果是最后一个story，追加“View Activities”按钮
+    // 如果是最后一个story，追加"View Activities"按钮
     if (currentIndex === storyIds.length - 1) {
         navHtml += `
-           <button class="view-activities-button" onclick="window.location.href='activity.html'">
+           <button class="view-activities-button" onclick="window.location.href='./activity.html'">
                     View Activities
                 </button>
         `;
