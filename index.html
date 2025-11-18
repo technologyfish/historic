@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historic Mercersburg</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header-left">
+        <h1 class="logo">Jolie</h1>
+    </div>
+    <nav class="header-nav">
+        <ul class="nav-list">
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">MAP</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Address Story</a>
+            </li>
+            <li class="nav-item">
+                <a href="history.html" class="nav-link">History</a>
+            </li>
+            <li class="nav-item">
+                <a href="activity.html" class="nav-link">Activity</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="main-content home-content">
+    <!-- Hero Section with Map Header -->
+    <section class="hero-section" onclick="window.location.href='history.html'">
+        <img src="images/map-header-top.png" alt="Historic Mercersburg Map" class="hero-image">
+    </section>
+
+    <!-- Treasure Map Section -->
+    <section class="treasure-map-section">
+        <div class="map-container">
+            <img src="images/cbt.png" alt="Mercersburg Tour Guide Map" class="treasure-map-image">
+
+            <!-- Map Icons positioned at specific locations -->
+            <!-- id=1: Mercersburg Academy Chapel -->
+            <div class="map-icon" style="top: 13.2%; left: 19%;" data-location-id="1">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=3: Buchanan Hotel (位置对应 Buchanan Hotel) -->
+            <div class="map-icon" style="top: 35%; left: 39.7%;" data-location-id="2">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=2: Harriet Lane House (位置对应 Harriet Lane House) -->
+            <div class="map-icon" style="bottom: 18.6%; left: 22%;" data-location-id="3">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=4: Historic Post Office -->
+            <div class="map-icon" style="bottom: 29.8%; left: 53%;" data-location-id="4">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=5: The Johnston Tavern -->
+            <div class="map-icon" style="bottom: 14.6%; right: 14%;" data-location-id="5">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=6: Presbyterian Church -->
+            <div class="map-icon" style="top: 50%; right: 20%;" data-location-id="6">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=8: Mercersburg Town Square (位置对应 Town Square) -->
+            <div class="map-icon" style="top: 24%; right: 18.8%;" data-location-id="7">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+
+            <!-- id=7: Irwin House / General Store (位置对应 Irwin House) -->
+            <div class="map-icon" style="top: 10%; left: 55%;" data-location-id="8">
+                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Historic Buildings Section -->
+    <section class="historic-buildings-section">
+        <h2 class="buildings-title">Historic Buildings</h2>
+        <p class="buildings-subtitle">Explore the architectural treasures that define Mercersburg's rich heritage. Each building represents a chapter in our town's remarkable story.</p>
+
+        <!-- Buildings Grid -->
+        <div class="buildings-grid" id="buildings-grid">
+            <!-- Buildings will be loaded dynamically -->
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer home-footer">
+    <div class="footer-content">
+        <p class="footer-text-main">Preserving history, one building at a time</p>
+        <p class="footer-text-copyright">© 2025 Historic Mercersburg. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
+
