@@ -2,15 +2,14 @@
 const storiesData = {
     '1': {
         id: '1',
-        title: 'Mercersburg Academy Chapel',
+        title: 'The Mercersburg Academy Chapel',
         sections: [
             {
                 title: 'About This Historic Site',
                 type: 'about',
                 color: '#8B4513',
                 content: [
-                    'The Mercersburg Academy Chapel stands as one of the most magnificent examples of collegiate Gothic architecture in Pennsylvania. Built in 1928, this stunning structure was designed by renowned architect Ralph Adams Cram, who also worked on the Cathedral of St. John the Divine in New York City. ',
-                    'The chapel‘s 160-foot tower can be seen from miles away and has become an iconic symbol of both the Academy and the town of Mercersburg. Inside, you’ll find beautiful stained glass windows, hand-carved wooden pews, and an impressive pipe organ with over 2,000 pipes!'
+                    'This magnificent American Gothic Chapel, located on the Mercersburg Academy campus, was designed by Ralph Adams Cram and built between 1924 and 1925. It features exquisite stained glass windows and oak carvings that bear thistle and mae motifs as memorials to the men who lost their lives in World War I. Carillon recitals on the forty-nine bell carillon in Barker Tower are given weekly on Sundays at 3:00 P.M. when school is in session.'
                 ]
             },
             {
@@ -60,15 +59,14 @@ const storiesData = {
     },
     '2': {
         id: '2',
-        title: 'Harriet Lane House',
+        title: 'The Buchanan Hotel',
         sections: [
             {
-                title: 'America\'s First "First Lady"',
+                title: 'About This Historic Site',
                 type: 'about',
                 color: '#FF8C00',
                 content: [
-                    'This beautiful home belonged to Harriet Lane, the niece of President James Buchanan. BecausePresident Buchanan never married, Harriet served as the White House hostess during hispresidency from 1857 to 1861. She was so popular and influential that she became known as the"Democratic Queen and set the standard for all future First Ladies!',
-                    'At just 27 years old, Harriet Lane became one of the youngest women to serve as First Lady. Shewas beautiful, charming, intelligent, and spoke several languages, She organized magnificentparties at the White House and was beloved by both Americans and foreign diplomats.'
+                    'James Buchanan, Sr., erected this large brick house in 1796, and it is where his son, future President James Buchanan, spent his boyhood. The McAfee brothers later purchased the house, enlarged it in the Italianate style, and converted it into a hotel, which was ultimately named The James Buchanan Hotel by Jack McLaughlin'
                 ]
             },
             {
@@ -180,15 +178,14 @@ const storiesData = {
     },
     '4': {
         id: '4',
-        title: 'Historic Post Office',
+        title: 'The Post Office',
         sections: [
             {
-                title: 'The Heart of Community Communication',
+                title: 'About This Historic Site',
                 type: 'about',
                 color: '#8B4513',
                 content: [
-                    'Before telephones, email, and text messages, the post office was the lifeline connectingMercersburg to the rest of the world! This historic building served as the central hub wheretownspeople would gather daily to collect their mail, catch up on news, and socialize withneighbors.',
-                    'Built in the classic Colonial Revival style, the post office features beautiful architectural detailsincluding brick construction, white columns, and large windows that flood the interior with naturallight. The building\'s design reflects the importance of the postal service in American life duringthe 19th and early 20th centuries.'
+                    'This Colonial Revival-style building of locally quarried limestone with granite steps was dedicated in 1937 with Postmaster General James A. Farley as the principal speaker. Above the postmaster\'s office door is a relief work titled "Good News," sculpted by Joseph Nicolai, depicting a farmer and his wife.'
                 ]
             },
             {
@@ -362,12 +359,11 @@ const storiesData = {
         title: 'Presbyterian Church',
         sections: [
             {
-                title: 'A Beacon of Faith and Community',
+                title: 'About This Historic Site',
                 type: 'about',
                 color: '#333',
                 content: [
-                    'The Mercersburg Presbyterian Church, with its distinctive red brick construction and toweringwhite steeple, has been a cornerstone of the community for over 175 years. founded in the early1 800s, this church has witnessed the growth of Mercersburg from a small frontier settlement tothe thriving town it is today.',
-                    'The church\'s beautiful steeple, visible from miles around, served not just as a call to worship butalso as a landmark for travelers and a symbol of hope for the community. The bell in the steeplehas rung for weddings, funerals, church services, and to warn of danger for generations.'
+                    'Built in 1794, this Romanesque Revival style church of native limestone is known today as the Presbyterian Church of the Upper West Conococheague and replaced an earlier Scotch-Irish church that was disbanded due to Indian disturbance. The Church established Sunday School in 1816 and a prayer meeting in 1818.'
                 ]
             },
             {

@@ -15,7 +15,7 @@ $(document).ready(function() {
     document.title = story.title + ' - Historic Mercersburg';
     
     // 更新story标题
-    $('#story-title').html(`<span class="story-number"></span> ${story.title}`);
+    $('#story-title').html(`<span class="story-number">${story.id}</span> ${story.title}`);
     
     // 渲染sections
     renderSections(story);

@@ -95,7 +95,7 @@ function renderBuildings() {
     const grid = document.getElementById('buildings-grid');
     if (!grid) return;
 
-    grid.innerHTML = buildingsData.map(building => `
+    const buildingsHTML = buildingsData.map(building => `
         <div class="building-card" data-building-id="${building.id}" onclick="window.location.href='./story.html?id=${building.id}'" style="cursor: pointer;">
             <div class="building-image-wrapper">
                 <img src="${building.image}" alt="${building.title}" class="building-image">
@@ -127,6 +127,16 @@ function renderBuildings() {
             </div>
         </div>
     `).join('');
+
+    const moreBtnHTML = `
+        <div class="more-btn-wrapper">
+            <a href="./other_spots.html" class="more-btn-link">
+                <img src="images/more-btn-bg.png" alt="Other Spots">
+            </a>
+        </div>
+    `;
+
+    grid.innerHTML = buildingsHTML + moreBtnHTML;
 }
 
 // 页面加载完成后渲染建筑

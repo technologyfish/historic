@@ -175,6 +175,19 @@ body {
   }
 
   .buildings-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $color-text-light;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-primary;
+  }
+  
+  .buildings-intro-text {
     font-size: 1rem;
     color: $color-text-light;
     text-align: center;
@@ -185,6 +198,15 @@ body {
     margin-right: auto;
     font-family: $font-primary;
   }
+  
+  .section-title-buildings {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: $color-text;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-family: $font-primary;
+  }
 }
 
 // Buildings Grid
@@ -194,6 +216,195 @@ body {
   gap: 1.5rem;
   width: 100%;
 }
+
+.more-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center in the grid cell */
+    height: 100%;
+    min-height: 200px; /* Ensure it has some height if empty row, but cards define row height */
+    
+    .more-btn-link {
+        display: block;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+        width: 200px ;
+        &:hover {
+            opacity: 0.8;
+        }
+        
+        img {
+             max-width: 100%;
+             height: auto;
+            display: block;
+        }
+    }
+}
+
+// Other Spots Section
+.other-spots-section {
+  padding: 3.75rem 1.25rem;
+  background: $color-bg-main;
+  min-height: 100vh;
+
+  .other-spots-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .other-spots-dot {
+      width: 12px;
+      height: 12px;
+      background-color: #D2691E;
+      border-radius: 50%;
+    }
+
+    .other-spots-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #000;
+      font-family: $font-primary;
+    }
+  }
+
+  .spots-list {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .spot-item {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    .spot-header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+    }
+
+    .spot-title {
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #D2691E;
+      margin: 0;
+      font-family: $font-primary;
+      padding-right: 1rem;
+    }
+
+    .spot-toggle-btn {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    .spot-content {
+      display: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #f0f0f0;
+      font-family: $font-primary;
+      
+      p {
+          margin-bottom: 1rem;
+          line-height: 1.6;
+          color: $color-text;
+          font-size: 0.9375rem;
+      }
+      
+      h4 {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+          font-family: $font-primary;
+          margin-top: 1.25rem;
+          
+          &:first-child {
+              margin-top: 0;
+          }
+      }
+
+      // Section Styles
+      .spot-section-box {
+          border-radius: 0.5rem;
+          padding: 1.25rem;
+          margin-bottom: 1.25rem;
+          
+          h4 {
+              margin-top: 0;
+          }
+
+          &.did-you-know {
+              background-color: #F0F5F0; 
+              h4 { color: #558B55; }
+          }
+
+          &.think-about-it {
+              background-color: #FFF8E8; 
+              h4 { color: #D79B00; }
+          }
+
+          &.architectural-details {
+              padding: 0;
+              margin-bottom: 1.25rem;
+             h4 { color: $color-text; }
+          }
+          
+          ul {
+              list-style: disc;
+              padding-left: 1.25rem;
+              margin-bottom: 0;
+              
+              li {
+                  margin-bottom: 0.5rem;
+                  font-size: 0.9375rem;
+                  color: $color-text;
+                  line-height: 1.6;
+                  
+                  &:last-child {
+                      margin-bottom: 0;
+                  }
+              }
+          }
+          
+          .question-item {
+              margin-bottom: 0.75rem;
+              font-size: 0.9375rem;
+              color: $color-text;
+              line-height: 1.6;
+              
+              strong {
+                  display: block;
+                  font-weight: bold;
+                  margin-bottom: 0.25rem;
+              }
+          }
+      }
+    }
+  }
+}
+
 
 .building-card {
   background: #fff;
@@ -323,14 +534,14 @@ body {
     padding: 0 1.25rem;
 
     .footer-text-main {
-      font-size: 1rem;
+      font-size: .8rem;
       color: $color-text-light;
       margin-bottom: 0.5rem;
       font-family: $font-primary;
     }
 
     .footer-text-copyright {
-      font-size: 0.8125rem;
+      font-size: 0.7125rem;
       color: $color-text-lighter;
       font-family: $font-primary;
     }
