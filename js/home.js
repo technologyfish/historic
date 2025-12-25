@@ -131,7 +131,7 @@ function renderBuildings() {
     const moreBtnHTML = `
         <div class="more-btn-wrapper">
             <a href="./other_spots.html" class="more-btn-link">
-                <img src="images/more-btn-bg.png" alt="Other Spots">
+                <img src="images/other.png" alt="Other Spots">
             </a>
         </div>
     `;

@@ -22,6 +22,17 @@ $(document).ready(function() {
     
     // 渲染导航按钮
     renderNavigation(storyId);
+    
+    // 如果storyId为1，设置TownHistory导航为active
+    if (storyId === '1') {
+        $('.nav-item').removeClass('active');
+        $('.nav-item').each(function() {
+            const linkText = $(this).find('.nav-link').text().trim();
+            if (linkText === 'TownHistory') {
+                $(this).addClass('active');
+            }
+        });
+    }
 });
 
 // 渲染sections
