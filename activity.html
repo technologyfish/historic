@@ -110,7 +110,30 @@ have discovered about their local history!</p>
                 </div>
             </div>
         </section>
+
+        <!-- Module 5: PDF Worksheet Download -->
+        <section class="module-pdf-download">
+            <div class="module-container">
+                <div class="pdf-download-box" id="worksheetPdfLink" data-pdf-url="https://www.aizhong168.cn/9.pdf">
+                    <span class="pdf-link-text">Click here for pdf of worksheet</span>
+                    <img src="images/icon-pdf.png" alt="PDF Icon" class="pdf-icon">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h2 id="modalTitle" class="pdf-modal-title">PDF Preview</h2>
+                <span class="pdf-modal-close">&times;</span>
+            </div>
+            <div class="pdf-modal-body" id="pdfContainer">
+                <!-- PDF iframe will be loaded here -->
+            </div>
+        </div>
+    </div>
 
     <footer class="footer home-footer">
         <div class="footer-content">

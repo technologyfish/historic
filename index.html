@@ -38,84 +38,63 @@
 
 <!-- Main Content -->
 <main class="main-content home-content">
-    <!-- Hero Section with Map Header -->
-<!--    <section class="hero-section" onclick="window.location.href='./history.html'">-->
-<!--        <img src="images/map-header-top.png" alt="Historic Mercersburg Map" class="hero-image">-->
-<!--    </section>-->
-    <section class="historic-buildings-section">
-        <h2 class="buildings-title">Word on the street.</h2>
-        <p class="buildings-subtitle" style="margin-bottom:0">Helping kids discover the history hiding in glaces the glive</p>
-    </section>
-    <!-- Treasure Map Section -->
-    <section class="treasure-map-section">
-        <div class="map-container">
-            <img src="images/cbt.png" alt="Mercersburg Tour Guide Map" class="treasure-map-image">
+    <!-- World Map Section -->
+    <section class="world-map-section">
+        <div class="world-map-container">
+            <img src="images/new-map.png" alt="World Map" class="world-map-image">
 
             <!-- Map Icons positioned at specific locations -->
-            <!-- id=1: Mercersburg Academy Chapel -->
-            <div class="map-icon" style="top: 13.2%; left: 19%;" data-location-id="1">
+            <!-- Great Falls WOTS -->
+            <div class="world-map-icon" style="top: 36%;left: 25%;" data-pdf-url="https://www.aizhong168.cn/6.pdf,https://www.aizhong168.cn/8.pdf" data-location-name="Mount Vernon Word On The Stree&White House WOTS
+">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
 
-            <!-- id=3: Buchanan Hotel (位置对应 Buchanan Hotel) -->
-            <div class="map-icon" style="top: 35%; left: 39.7%;" data-location-id="2">
+            <!-- James Buchanan Log Cabin WOTS -->
+            <div class="world-map-icon" style="bottom: 25%;right: 12%;" data-pdf-url="https://www.aizhong168.cn/2.pdf,https://www.aizhong168.cn/3.pdf" data-location-name="Hornsby Court House & Water Clock WOTs">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
 
-            <!-- id=2: Harriet Lane House (位置对应 Harriet Lane House) -->
-            <div class="map-icon" style="bottom: 18.6%; left: 22%;" data-location-id="3">
+            <!-- Mount Vernon & White House WOTS -->
+            <div class="world-map-icon" style="top: 38%;left: 22.8%;" data-pdf-url="https://www.aizhong168.cn/4.pdf" data-location-name="James Buchanan Log Cabin WOTS
+">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
 
-            <!-- id=4: Historic Post Office -->
-            <div class="map-icon" style="bottom: 29.8%; left: 53%;" data-location-id="4">
+            <!-- Pyramids of Giza WOTs -->
+            <div class="world-map-icon" style="top: 38%;left: 25%;" data-pdf-url="https://www.aizhong168.cn/1.pdf" data-location-name="Great Falls WOTS
+
+">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
 
-            <!-- id=5: The Johnston Tavern -->
-            <div class="map-icon" style="bottom: 14.6%; right: 14%;" data-location-id="5">
+            <!-- Hornsby Court House & Water Clock WOTs -->
+            <div class="world-map-icon" style="    top: 40%; right: 42.3%;" data-pdf-url="https://www.aizhong168.cn/7.pdf" data-location-name="Pyramids of Giza WOTs
+">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
 
-            <!-- id=6: Presbyterian Church -->
-            <div class="map-icon" style="top: 50%; right: 20%;" data-location-id="6">
+            <!-- Lisgar Garden WOTS -->
+            <div class="world-map-icon" style="    bottom: 23%;right: 13%" data-pdf-url="https://www.aizhong168.cn/5.pdf" data-location-name="Lisgar Garden WOTS
+">
                 <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
             </div>
-
-            <!-- id=8: Mercersburg Town Square (位置对应 Town Square) -->
-            <div class="map-icon" style="top: 24%; right: 18.8%;" data-location-id="8">
-                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
-            </div>
-
-            <!-- id=7: Irwin House / General Store (位置对应 Irwin House) -->
-            <div class="map-icon" style="top: 10%; left: 55%;" data-location-id="7">
-                <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Historic Buildings Section -->
-    <section class="historic-buildings-section">
-
-        <div class="mission-section">
-            <h3 class="mission-title">Our Mission</h3>
-            <p class="buildings-intro-text">We believe history isn't just found in textbooks or museums — it lives in our streets, 
-buildings, and neighborhoods. Too often, local history is overlooked or never taught, 
-especially to kids. When people don't know the stories of where they live, those stories can be lost. 
-Through research, short-form storytelling, and guided activities, 
-Word on the Street aims to make local history easier to access and understand. 
-The project also encourages kids to look more closely at their surroundings and 
-ask questions about where they live, helping them see that history isn't far away — it's right around them.</p>
-        </div>
-
-        <h2 class="section-title-buildings">Historic Buildings</h2>
-
-        <!-- Buildings Grid -->
-        <div class="buildings-grid" id="buildings-grid">
-            <!-- Buildings will be loaded dynamically -->
         </div>
     </section>
 </main>
+
+<!-- PDF Modal -->
+<div id="pdfModal" class="pdf-modal">
+    <div class="pdf-modal-content">
+        <div class="pdf-modal-header">
+            <h2 id="modalTitle" class="pdf-modal-title">PDF Preview</h2>
+            <span class="pdf-modal-close">&times;</span>
+        </div>
+        <div class="pdf-modal-body" id="pdfContainer">
+            <!-- PDF iframes will be loaded here -->
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer home-footer">

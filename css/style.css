@@ -128,6 +128,164 @@ body {
   margin: 0 auto;
 }
 
+.world-map-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #faf7f0;
+}
+
+.world-map-container {
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.world-map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.world-map-icon {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.world-map-icon:hover {
+  transform: scale(1.3);
+  z-index: 20;
+}
+.world-map-icon:hover .icon-image {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+.world-map-icon .icon-image {
+  width: 4rem;
+  height: 4rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+/* Tooltip styles */
+.world-map-icon::after {
+  content: attr(data-location-name);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-family: "Arial", sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.world-map-icon::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+}
+
+.world-map-icon:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-12px);
+}
+
+.world-map-icon:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+.pdf-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pdf-modal-content {
+  background-color: #fff;
+  margin: 2% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ddd;
+  background: #faf7f0;
+}
+
+.pdf-modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.pdf-modal-close {
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.pdf-modal-close:hover, .pdf-modal-close:focus {
+  color: #000;
+}
+
+.pdf-modal-body {
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+  max-height: calc(90vh - 80px);
+}
+
+.pdf-iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.pdf-iframe:last-child {
+  margin-bottom: 0;
+}
+
 .historic-buildings-section {
   width: 100%;
   max-width: 1080px;
@@ -925,6 +1083,46 @@ body {
   border-radius: 1rem;
 }
 
+.module-pdf-download {
+  background: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.pdf-download-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+.pdf-download-box:hover {
+  background: #f9f9f9;
+}
+.pdf-download-box:hover .pdf-link-text {
+  color: #8B0000;
+}
+
+.pdf-icon {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+.pdf-link-text {
+  font-size: 1.2rem;
+  color: #D2691E;
+  font-weight: 500;
+  font-family: "Arial", sans-serif;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
 .activity-section {
   margin-bottom: 2.5rem;
 }
@@ -1620,6 +1818,9 @@ body {
   .module-container {
     padding: 3rem 1rem;
   }
+  .module-worksheets {
+    width: 100%;
+  }
   .history-content-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1630,6 +1831,38 @@ body {
   }
   .history-section-title {
     font-size: 1.5rem;
+  }
+  .world-map-container {
+    padding: 0 1rem;
+  }
+  .world-map-icon .icon-image {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .pdf-modal-content {
+    width: 95%;
+    margin: 5% auto;
+  }
+  .pdf-modal-title {
+    font-size: 1.2rem;
+  }
+  .pdf-iframe {
+    height: 60vh;
+  }
+  .module-pdf-download {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .pdf-download-box {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+  .pdf-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .pdf-link-text {
+    font-size: 0.95rem;
   }
 }
 

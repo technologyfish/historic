@@ -141,14 +141,66 @@ function renderBuildings() {
 
 // 页面加载完成后渲染建筑
 $(document).ready(function() {
-    renderBuildings();
+    // renderBuildings(); // 注释掉原来的建筑渲染
     
-    // 地图图标点击功能
-    $('.map-icon').on('click', function() {
-        const locationId = $(this).data('location-id');
-        if (locationId) {
-            // 跳转到story页面，传递位置ID
-            window.location.href = `./story.html?id=${locationId}`;
+    // 世界地图图标点击功能
+    $('.world-map-icon').on('click', function() {
+        const pdfUrls = $(this).data('pdf-url');
+        const locationName = $(this).data('location-name');
+        
+        if (pdfUrls) {
+            openPdfModal(pdfUrls, locationName);
+        }
+    });
+    
+    // 关闭弹窗
+    $('.pdf-modal-close').on('click', function() {
+        closePdfModal();
+    });
+    
+    // 点击弹窗外部关闭
+    $('#pdfModal').on('click', function(e) {
+        if (e.target.id === 'pdfModal') {
+            closePdfModal();
         }
     });
 });
+
+// 打开PDF预览弹窗
+function openPdfModal(pdfUrls, locationName) {
+    const modal = $('#pdfModal');
+    const modalTitle = $('#modalTitle');
+    const pdfContainer = $('#pdfContainer');
+    
+    // 设置标题
+    modalTitle.text(locationName);
+    
+    // 清空容器
+    pdfContainer.empty();
+    
+    // 处理PDF URLs（可能是逗号分隔的多个URL）
+    const urls = pdfUrls.split(',');
+    
+    urls.forEach(url => {
+        const iframe = $('<iframe>', {
+            src: url,
+            class: 'pdf-iframe',
+            frameborder: '0'
+        });
+        pdfContainer.append(iframe);
+    });
+    
+    // 显示弹窗
+    modal.fadeIn(300);
+    $('body').css('overflow', 'hidden');
+}
+
+// 关闭PDF预览弹窗
+function closePdfModal() {
+    const modal = $('#pdfModal');
+    const pdfContainer = $('#pdfContainer');
+    
+    modal.fadeOut(300);
+    pdfContainer.empty();
+    $('body').css('overflow', 'auto');
+}

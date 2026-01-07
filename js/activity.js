@@ -48,6 +48,7 @@ $(document).ready(function() {
     renderGallery();
     renderPlanCards();
     initVideoPlayer();
+    initPdfPreview();
 });
 
 function renderHighlights() {
@@ -130,6 +131,62 @@ function initVideoPlayer() {
     video.addEventListener('ended', () => {
         overlay.classList.remove('hidden');
     });
+}
+
+// 初始化PDF预览功能
+function initPdfPreview() {
+    // PDF worksheet 点击事件
+    $('#worksheetPdfLink').on('click', function() {
+        const pdfUrl = $(this).data('pdf-url');
+        openPdfModal(pdfUrl, 'Worksheet PDF');
+    });
+    
+    // 关闭弹窗
+    $('.pdf-modal-close').on('click', function() {
+        closePdfModal();
+    });
+    
+    // 点击弹窗外部关闭
+    $('#pdfModal').on('click', function(e) {
+        if (e.target.id === 'pdfModal') {
+            closePdfModal();
+        }
+    });
+}
+
+// 打开PDF预览弹窗
+function openPdfModal(pdfUrl, title) {
+    const modal = $('#pdfModal');
+    const modalTitle = $('#modalTitle');
+    const pdfContainer = $('#pdfContainer');
+    
+    // 设置标题
+    modalTitle.text(title);
+    
+    // 清空容器
+    pdfContainer.empty();
+    
+    // 创建iframe
+    const iframe = $('<iframe>', {
+        src: pdfUrl,
+        class: 'pdf-iframe',
+        frameborder: '0'
+    });
+    pdfContainer.append(iframe);
+    
+    // 显示弹窗
+    modal.fadeIn(300);
+    $('body').css('overflow', 'hidden');
+}
+
+// 关闭PDF预览弹窗
+function closePdfModal() {
+    const modal = $('#pdfModal');
+    const pdfContainer = $('#pdfContainer');
+    
+    modal.fadeOut(300);
+    pdfContainer.empty();
+    $('body').css('overflow', 'auto');
 }
 
 
