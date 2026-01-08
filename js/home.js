@@ -141,7 +141,7 @@ function renderBuildings() {
 
 // 页面加载完成后渲染建筑
 $(document).ready(function() {
-    // renderBuildings(); // 注释掉原来的建筑渲染
+    renderBuildings();
     
     // 世界地图图标点击功能
     $('.world-map-icon').on('click', function() {
