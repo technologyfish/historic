@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f3f6d8-15a5-49ff-a4fd-21f5f282613e" name="Changes" comment="提交代码">
+      <change afterPath="$PROJECT_DIR$/images/pdf/1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/5.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/6.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/7.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pdf/8.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity.html" beforeDir="false" afterPath="$PROJECT_DIR$/activity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/a-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/a-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other_spots.html" beforeDir="false" afterPath="$PROJECT_DIR$/other_spots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story.html" beforeDir="false" afterPath="$PROJECT_DIR$/story.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +30,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main-map" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -35,24 +57,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/my-code/historic/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/my-code/kehu-web/historic/images/pdf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my-code\kehu-web\historic\images\pdf" />
+      <recent name="D:\my-code\kehu-web\historic\images" />
       <recent name="D:\my-code\historic\images" />
       <recent name="D:\my-code\historic" />
     </key>
@@ -77,6 +101,9 @@
       <workItem from="1764207180915" duration="14671000" />
       <workItem from="1764375877087" duration="1217000" />
       <workItem from="1764552368898" duration="1003000" />
+      <workItem from="1767720558920" duration="5754000" />
+      <workItem from="1767788400899" duration="5767000" />
+      <workItem from="1768755739502" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="提交代码">
       <option name="closed" value="true" />
@@ -118,7 +145,39 @@
       <option name="project" value="LOCAL" />
       <updated>1764552844471</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="提交代码">
+      <option name="closed" value="true" />
+      <created>1767049063620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767049063620</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交代码">
+      <option name="closed" value="true" />
+      <created>1767790181489</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767790181489</updated>
+    </task>
+    <task id="LOCAL-00008" summary="提交代码">
+      <option name="closed" value="true" />
+      <created>1767834903156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767834903156</updated>
+    </task>
+    <task id="LOCAL-00009" summary="提交代码">
+      <option name="closed" value="true" />
+      <created>1767836259784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767836259784</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +188,7 @@
       <map>
         <entry key="0d67d220-452b-4cec-92a8-973d0d849f20" value="TOOL_WINDOW" />
         <entry key="84c62cb6-b900-4c3c-8eaf-964f0fac684a" value="TOOL_WINDOW" />
+        <entry key="ad9faeec-193d-42d6-b4f8-0a50b761b930" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="TAB_STATES">
@@ -188,10 +248,36 @@
             <State />
           </value>
         </entry>
+        <entry key="ad9faeec-193d-42d6-b4f8-0a50b761b930">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
     <MESSAGE value="提交代码" />
     <option name="LAST_COMMIT_MESSAGE" value="提交代码" />
   </component>

@@ -1221,7 +1221,16 @@ body {
   transition: color 0.3s ease;
   text-align: center;
 }
-
+.pdf-link-text-2{
+  font-size: 1.4rem;
+  color: #8B0000;
+  font-weight: 500;
+  font-family: $font-primary;
+  transition: color 0.3s ease;
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+}
 .activity-section {
   margin-bottom: 2.5rem;
 
