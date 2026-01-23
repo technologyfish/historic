@@ -72,13 +72,15 @@ and stories that make our town special.</p>
                 <div class="online-content">
                     <div class="online-video">
                         <div class="video-wrapper">
-                            <video id="activity-video" poster="">
-                                <source src="https://www.aizhong168.cn/1115.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay" id="video-overlay">
-                                <div class="play-button"></div>
-                            </div>
+
+<!--                            <video id="activity-video" poster="">-->
+<!--                                <source src="https://www.aizhong168.cn/1115.mp4" type="video/mp4">-->
+<!--                                Your browser does not support the video tag.-->
+<!--                            </video>-->
+<!--                            <div class="video-overlay" id="video-overlay">-->
+<!--                                <div class="play-button"></div>-->
+<!--                            </div>-->
+                            <img src="images/video-img.jpg" alt="Word on the Street">
                         </div>
                     </div>
                     <div class="online-text">
@@ -105,9 +107,57 @@ them that tell a story about their neighborhood</p>
 Once filled out, your contributions can be added to our map by emailing <a href="mailto:wots.org@gmail.com">wots.org@gmail.com</a>
 to share a photo of your worksheet! Click on different parts of the map to see what other kids 
 have discovered about their local history!</p>
-                <div class="map-image-wrapper">
-                    <img src="images/activity-map.png" alt="Interactive Map" class="map-image">
-                </div>
+                <!-- Treasure Map Section -->
+                <section class="treasure-map-section">
+                    <div class="map-container">
+                        <!-- World Map Section -->
+                        <section class="world-map-section">
+                            <div class="world-map-container">
+                                <img src="images/new-map.png" alt="World Map" class="world-map-image">
+
+                                <!-- Map Icons positioned at specific locations -->
+                                <!-- Great Falls WOTS -->
+                                <div class="world-map-icon" style="top: 36%;left: 25%;" data-pdf-url="images/pdf/6.pdf,images/pdf/8.pdf,images/pdf/2-3.pdf" data-location-name="Mount Vernon Word On The Stree&White House&Green Spring">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <!-- James Buchanan Log Cabin WOTS -->
+                                <div class="world-map-icon" style="bottom: 25%;right: 12%;" data-pdf-url="images/pdf/2.pdf,images/pdf/3.pdf" data-location-name="Hornsby Court House & Water Clock">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <!-- Mount Vernon & White House WOTS -->
+                                <div class="world-map-icon" style="top: 38%;left: 22.8%;" data-pdf-url="images/pdf/4.pdf,images/pdf/2-5.pdf" data-location-name="James Buchanan Log Cabin&Manassas national Battlefield Park
+">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <div class="world-map-icon" style="top: 39%;left: 19.8%;" data-pdf-url="images/pdf/2-6.pdf" data-location-name="The Alamo">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <!-- Pyramids of Giza WOTs -->
+                                <div class="world-map-icon" style="top: 38%;left: 25%;" data-pdf-url="images/pdf/1.pdf,images/pdf/2-1.pdf,images/pdf/2-2.pdf,images/pdf/2-4.pdf" data-location-name="Great Falls & Fairfax County Courthouse & Forbidden city & Lincoln Memorial">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <!-- Hornsby Court House & Water Clock WOTs -->
+                                <div class="world-map-icon" style="    top: 40%; right: 42.3%;" data-pdf-url="images/pdf/7.pdf" data-location-name="Pyramids of Giza">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <!-- Lisgar Garden WOTS -->
+                                <div class="world-map-icon" style="    bottom: 23%;right: 13%" data-pdf-url="images/pdf/5.pdf" data-location-name="Lisgar Garden">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+
+                                <div class="world-map-icon" style="    bottom: 52.5%;right: 20%" data-pdf-url="images/pdf/2-7.pdf" data-location-name="无锡市大茶壶">
+                                    <img src="images/icon-add.png" alt="Location Marker" class="icon-image">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
                 <span class="pdf-link-text-2"><a href="./index.html">click here</a> to download the worksheet</span>
             </div>
         </section>
@@ -115,7 +165,7 @@ have discovered about their local history!</p>
         <!-- Module 5: PDF Worksheet Download -->
         <section class="module-pdf-download">
             <div class="module-container">
-                <div class="pdf-download-box" id="worksheetPdfLink" data-pdf-url="https://www.aizhong168.cn/9.pdf">
+                <div class="pdf-download-box" id="worksheetPdfLink" data-pdf-url="images/pdf/9.pdf">
                     <span class="pdf-link-text">Click here for pdf of worksheet</span>
                     <img src="images/icon-pdf.png" alt="PDF Icon" class="pdf-icon">
                 </div>
@@ -138,7 +188,8 @@ have discovered about their local history!</p>
 
     <footer class="footer home-footer">
         <div class="footer-content">
-            <p class="footer-text-main">Preserving history, one building at a time</p>
+            <p class="footer-text-main">one story at a time, instead of one building at a time
+            </p>
             <p class="footer-text-copyright">© 2025 Historic Mercersburg. All rights reserved.</p>
         </div>
     </footer>
